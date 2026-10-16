@@ -1,0 +1,54 @@
+# ---------------------------------------------------------------
+# Compiled C output
+# ---------------------------------------------------------------
+
+# Executables without an extension (e.g. `gcc q01.c -o q01`):
+# ignore every file, then re-allow folders and anything with an extension.
+*
+!*/
+!*.*
+!Makefile
+!makefile
+!LICENSE
+
+# Object files and executables with an extension
+*.o
+*.obj
+*.out
+*.exe
+*.app
+
+# Debug symbols (macOS clang -g)
+*.dSYM/
+
+# Build folders
+build/
+bin/
+obj/
+
+# ---------------------------------------------------------------
+# Editors / IDEs
+# ---------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*~
+
+# Code::Blocks
+*.cbp
+*.layout
+*.depend
+
+# Dev-C++
+*.dev
+
+# Claude Code local settings
+.claude/settings.local.json
+
+# ---------------------------------------------------------------
+# OS files
+# ---------------------------------------------------------------
+.DS_Store
+._*
+Thumbs.db
+desktop.ini
