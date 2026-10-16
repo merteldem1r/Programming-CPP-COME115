@@ -1,5 +1,7 @@
 # Hafta 3 – Ekstra Çalışma Soruları Çözümleri
 
+**Kaynak:** [lab-3-ekstra.pdf](../materials/lab-3-ekstra.pdf) · **Semboller:** [flow-diagrams.pdf](../materials/flow-diagrams.pdf) · [README](../../README.md)
+
 | Şekil | Anlamı |
 |---|---|
 | Oval | Başla / Bitir |
