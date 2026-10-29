@@ -26,13 +26,16 @@ int main()
 
     if (year % 4 == 0)
     {
-        if (year % 400 == 0)
+        if (year % 100 != 0)
         {
-            printf("Leap");
+            printf("Leap"); // e.g. 2024
         }
         else
         {
-            printf("Not Leap");
+            if (year % 400 == 0)
+                printf("Leap"); // e.g. 2000
+            else
+                printf("Not Leap"); // e.g. 1900
         }
     }
     else

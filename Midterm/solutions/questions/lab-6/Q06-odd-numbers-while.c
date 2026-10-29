@@ -10,16 +10,14 @@
 
 int main(void)
 {
-    int num = 0, count = 1;
+    int num = 0, i = 1;
     printf("Enter a num: ");
     scanf("%d", &num);
 
-    while (count++ <= num)
+    while (i <= num)
     {
-        if (count % 2 == 1)
-        {
-            printf("%d ", count);
-        }
+        printf("%d ", i);
+        i += 2;
     }
 
     return 0;

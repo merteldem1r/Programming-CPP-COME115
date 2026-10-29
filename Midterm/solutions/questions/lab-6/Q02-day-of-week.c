@@ -15,7 +15,7 @@
 int main(void)
 {
     int num = 0;
-    printf("Enter the character: ");
+    printf("Enter a day (1-7): ");
     scanf("%d", &num);
 
     switch (num)

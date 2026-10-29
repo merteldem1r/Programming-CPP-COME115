@@ -21,13 +21,12 @@ int main(void)
     printf("Enter the character: ");
     scanf("%c", &c);
 
-    if (c >= 'A' && c <= 'Z')
+    if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
     {
-        printf("uppercase");
-    }
-    else if (c >= 'a' && c <= 'z')
-    {
-        printf("lowecase");
+        if (c >= 'A' && c <= 'Z')
+            printf("uppercase");
+        else
+            printf("lowercase");
     }
     else
     {

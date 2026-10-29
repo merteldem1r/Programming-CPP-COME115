@@ -19,11 +19,11 @@ int main(void)
 
     if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
     {
-        printf("Character");
+        printf("Letter");
     }
     else
     {
-        printf("Not Character");
+        printf("Not a letter");
     }
 
     return 0;

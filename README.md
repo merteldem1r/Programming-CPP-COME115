@@ -74,7 +74,7 @@ Compiled executables are ignored by `.gitignore`.
 | ----------------------------------------------- | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | [Lab&nbsp;5](Midterm/solutions/questions/lab-5) | 11&nbsp;+&nbsp;1&nbsp;bonus | Data types and format specifiers, `printf`/`scanf`, `if` / `if-else` / `else if` chains, nested `if`, logical operators (`&&`, `\|\|`), modulus `%`, `switch-case`, input validation |
 | [Lab&nbsp;6](Midterm/solutions/questions/lab-6) | 7                           | Character checks with ASCII ranges, nested `if`, `switch-case` (and fall-through without `break`), `for` and `while` loops, nested loops for star patterns                           |
-| [Lab&nbsp;7](Midterm/solutions/questions/lab-7) | –                           | `do-while`, nested loops, `break` / `continue`, functions                                                                                                                            |
+| [Lab&nbsp;7](Midterm/solutions/questions/lab-7) | 11                          | `do-while` menus, nested loops, char loops, functions: `void` vs returning, parameters, digit tricks with `%` and `/`                                                                |
 
 ## Final
 
