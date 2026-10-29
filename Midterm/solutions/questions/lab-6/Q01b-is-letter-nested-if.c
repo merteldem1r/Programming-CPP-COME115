@@ -12,3 +12,27 @@
  *
  * Hint: in ASCII, 'A' = 65 and 'Z' = 90.
  */
+
+#include <stdio.h>
+
+int main(void)
+{
+    char c = 'a';
+    printf("Enter the character: ");
+    scanf("%c", &c);
+
+    if (c >= 'A' && c <= 'Z')
+    {
+        printf("uppercase");
+    }
+    else if (c >= 'a' && c <= 'z')
+    {
+        printf("lowecase");
+    }
+    else
+    {
+        printf("not letter");
+    }
+
+    return 0;
+}

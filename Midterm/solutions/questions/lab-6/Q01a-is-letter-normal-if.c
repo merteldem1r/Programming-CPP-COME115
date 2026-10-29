@@ -8,3 +8,23 @@
  * Solve it with a single (non-nested) if-else, combining the
  * conditions with && and ||.
  */
+
+#include <stdio.h>
+
+int main(void)
+{
+    char c = 'a';
+    printf("Enter the character: ");
+    scanf("%c", &c);
+
+    if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
+    {
+        printf("Character");
+    }
+    else
+    {
+        printf("Not Character");
+    }
+
+    return 0;
+}
