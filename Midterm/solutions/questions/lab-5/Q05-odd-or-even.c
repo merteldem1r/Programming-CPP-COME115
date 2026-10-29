@@ -7,3 +7,23 @@
  * Try it with: 10, 7, 0 and -3.
  * Think about it: the difference between = (assignment) and == (comparison).
  */
+
+#include <stdio.h>
+
+int main()
+{
+    int num = 0;
+    printf("Enter num: ");
+    scanf("%d", &num);
+
+    if (num % 2 == 0)
+    {
+        printf("Even");
+    }
+    else
+    {
+        printf("Odd");
+    }
+
+    return 0;
+}

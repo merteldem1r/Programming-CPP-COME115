@@ -9,3 +9,29 @@
  * Think about it: how would the behavior change if you wrote
  * age > 18 instead of age >= 18?
  */
+
+#include <stdio.h>
+
+int main(void)
+{
+    int age = 0;
+    printf("Enter age: ");
+    scanf("%d", &age);
+
+    if (age <= 0)
+    {
+        printf("Wrong age");
+        return 0;
+    }
+
+    if (age >= 18)
+    {
+        printf("Okay");
+    }
+    else
+    {
+        printf("Not okay mk");
+    }
+
+    return 0;
+}

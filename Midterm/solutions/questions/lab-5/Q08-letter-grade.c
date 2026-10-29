@@ -16,3 +16,45 @@
  * Think about it: in "else if (grade >= 80)", why don't we also need
  * to check grade < 90?
  */
+
+#include <stdio.h>
+
+int main(void)
+{
+    int g = 0;
+    printf("Enter grade: ");
+    scanf("%d", &g);
+
+    if (g < 0 || g > 100)
+    {
+        printf("Wrong grade");
+        return 0;
+    }
+
+    if (g >= 90)
+    {
+        printf("AA");
+    }
+    else if (g >= 80)
+    {
+        printf("BA");
+    }
+    else if (g >= 70)
+    {
+        printf("BB");
+    }
+    else if (g >= 60)
+    {
+        printf("CB");
+    }
+    else if (g >= 50)
+    {
+        printf("CC");
+    }
+    else
+    {
+        printf("FF");
+    }
+
+    return 0;
+}

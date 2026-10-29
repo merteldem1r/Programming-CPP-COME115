@@ -11,3 +11,27 @@
  *
  * Think about it: why is nothing printed when a negative number is entered?
  */
+
+#include <stdio.h>
+
+int main(void)
+{
+    int num = 0;
+    printf("Enter the number: ");
+    scanf("%d", &num);
+
+    if (num > 0)
+    {
+        printf("Positive");
+    }
+    else if (num < 0)
+    {
+        printf("Negative");
+    }
+    else
+    {
+        printf("Zero");
+    }
+
+    return 0;
+}
