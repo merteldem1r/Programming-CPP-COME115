@@ -11,3 +11,41 @@
  *
  * Examples: 2 -> prime, 17 -> prime, 1 -> not prime, 15 -> not prime
  */
+
+#include <stdio.h>
+
+int isPrime(int num)
+{
+    if (num <= 1)
+    {
+        return 0;
+    }
+
+    for (int i = 2; i <= num / i; ++i)
+    {
+        if (num % i == 0)
+        {
+            return 0;
+        }
+    }
+
+    return 1;
+}
+
+int main(void)
+{
+    int num = 0;
+    printf("Enter the number: ");
+    scanf("%d", &num);
+
+    if (isPrime(num))
+    {
+        printf("Prime");
+    }
+    else
+    {
+        printf("Not prime");
+    }
+
+    return 0;
+}
