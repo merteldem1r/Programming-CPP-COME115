@@ -27,7 +27,7 @@ int main()
 {
     int num;
 
-    printf("Enter a temperature: ");
+    printf("Enter a number 1-10: ");
     scanf("%d", &num);
 
     if (num < 1 || num > 10)
@@ -37,4 +37,6 @@ int main()
     }
 
     printMultiplication(num);
+
+    return 0;
 }

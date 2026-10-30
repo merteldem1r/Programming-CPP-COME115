@@ -18,18 +18,35 @@ double celsiusToFahrenheit(double c)
 {
     return (c / 100) * 180 + 32;
 }
+
 double fahrenheitToCelsius(double f)
 {
     return (f - 32) / 180 * 100;
 }
 
-int main()
+int main(void)
 {
-    int temp;
+    double temp = 0;
+    int op = 0;
+
+    printf("1. C -> F\n2. F -> C\nPick conversion type: ");
+    scanf("%d", &op);
 
     printf("Enter a temperature: ");
-    scanf("%d", &temp);
+    scanf("%lf", &temp);
 
-    printf("celsius To Fahrenheit: %.2f\n", celsiusToFahrenheit(temp));
-    printf("fahrenheit To Celsius: %.2f", fahrenheitToCelsius(temp));
+    if (op == 1)
+    {
+        printf("Fahrenheit: %.2f\n", celsiusToFahrenheit(temp));
+    }
+    else if (op == 2)
+    {
+        printf("Celsius: %.2f\n", fahrenheitToCelsius(temp));
+    }
+    else
+    {
+        printf("Invalid choice!\n");
+    }
+
+    return 0;
 }

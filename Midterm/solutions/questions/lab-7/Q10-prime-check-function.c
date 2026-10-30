@@ -14,16 +14,16 @@
 
 #include <stdio.h>
 
-int isPrime(int num)
+int isPrime(int sayi) // isPrime
 {
-    if (num <= 1)
+    if (sayi <= 1)
     {
         return 0;
     }
 
-    for (int i = 2; i <= num / i; ++i)
+    for (int i = 2; i <= sayi / i; ++i)
     {
-        if (num % i == 0)
+        if (sayi % i == 0)
         {
             return 0;
         }

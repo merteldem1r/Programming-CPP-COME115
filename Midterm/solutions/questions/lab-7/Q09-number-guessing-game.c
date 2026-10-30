@@ -11,31 +11,39 @@
 
 #include <stdio.h>
 
-int main()
+int main(void)
 {
-    int num, guess = 37, attempts = 0;
+    int guess, secret = 37, attempts = 0;
 
     while (1)
     {
         printf("Enter a number to guess: ");
 
-        if (scanf("%d", &num) != 1)
+        int rc = scanf("%d", &guess);
+        if (rc == EOF)
         {
-            // if not integer want that and discard characters until it reaches the newline
+            // input ended (Ctrl+D), stop instead of looping forever
+            printf("\nNo more input. Exiting...\n");
+            break;
+        }
+        if (rc != 1)
+        {
+            // if not integer, discard characters until it reaches the newline
             printf("Invalid input! Please enter an integer.\n");
-            while (getchar() != '\n')
+            int ch;
+            while ((ch = getchar()) != '\n' && ch != EOF)
                 ;
             continue;
         }
 
         attempts++;
 
-        if (num == guess)
+        if (guess == secret)
         {
             printf("Correct guess! Attempts: %d\n", attempts);
             break;
         }
-        else if (num < guess)
+        else if (guess < secret)
             printf("Go higher\n");
         else
             printf("Go lower\n");

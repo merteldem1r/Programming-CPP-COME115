@@ -13,25 +13,25 @@
 
 #include <stdio.h>
 
-void printDivisors(int num)
+void printDivisors(int n) // printDivisors
 {
     printf("Divisors: ");
-    for (int i = 1; i <= num; ++i)
+    for (int i = 1; i <= n; ++i)
     {
-        if (num % i == 0)
+        if (n % i == 0)
         {
             printf("%d ", i);
         }
     }
 }
 
-int sumOfDivisors(int num)
+int sumOfDivisors(int n) // sumOfDivisors
 {
     int sum = 0;
 
-    for (int i = 1; i <= num; ++i)
+    for (int i = 1; i <= n; ++i)
     {
-        if (num % i == 0)
+        if (n % i == 0)
         {
             sum += i;
         }
@@ -51,7 +51,7 @@ int main(void)
         return 0;
     }
 
-    if (num < 0)
+    if (num <= 0)
     {
         printf("Enter positive number");
         return 0;

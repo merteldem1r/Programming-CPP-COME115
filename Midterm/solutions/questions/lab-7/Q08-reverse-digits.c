@@ -35,4 +35,6 @@ int main()
     printf("Enter a number: ");
     scanf("%d", &num);
     printf("Reversed: %d", reverseInt(num));
+
+    return 0;
 }

@@ -17,7 +17,7 @@
 
 #include <stdio.h>
 
-double tempConversation(double temp, int op)
+double tempConversion(double temp, int op)
 {
     double ans = 0;
     switch (op)
@@ -30,8 +30,13 @@ double tempConversation(double temp, int op)
         // F -> C
         ans = (temp - 32) / 180 * 100;
         break;
-
-    default:
+    case 3:
+        // C -> K
+        ans = temp + 273;
+        break;
+    case 4:
+        // K -> C
+        ans = temp - 273;
         break;
     }
 
@@ -40,25 +45,39 @@ double tempConversation(double temp, int op)
 
 int main(void)
 {
-    int temp = 0, op = 0;
+    double temp = 0;
+    int op = 0;
 
     do
     {
-        printf("Enter temperature: ");
-        scanf("%d", &temp);
-        printf("Pick conversation type \t 1. C -> F \t 2. F -> C \t 3. Exit \n");
-        scanf("%d", &op);
-
-        double ans = tempConversation(temp, op);
-
-        if (op == 3)
+        printf("\nPick conversion type\n");
+        printf("1. C -> F\n2. F -> C\n3. C -> K\n4. K -> C\n5. Exit\n");
+        if (scanf("%d", &op) != 1)
         {
-            printf("Exit...");
-            break;
+            printf("Invalid input. Exiting...\n");
+            return 0;
         }
-        printf("Answer: %.2f\n", ans);
 
-    } while (op != 3);
+        if (op == 5)
+        {
+            printf("Exit...\n");
+        }
+        else if (op < 1 || op > 5)
+        {
+            printf("Invalid choice!\n");
+        }
+        else
+        {
+            printf("Enter temperature: ");
+            if (scanf("%lf", &temp) != 1)
+            {
+                printf("Invalid input. Exiting...\n");
+                return 0;
+            }
+            printf("Answer: %.2f\n", tempConversion(temp, op));
+        }
+
+    } while (op != 5);
 
     return 0;
 }
