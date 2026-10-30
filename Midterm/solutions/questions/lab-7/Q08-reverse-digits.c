@@ -9,3 +9,30 @@
  *
  * Example: 12345 -> 54321
  */
+
+#include <stdio.h>
+
+int reverseInt(int num)
+{
+    int rev = 0;
+    int sign = num < 0 ? -1 : 1;
+    int absNum = num * sign;
+
+    while (absNum > 0)
+    {
+        int digit = absNum % 10;
+        rev = rev * 10 + digit;
+        absNum /= 10;
+    }
+
+    return rev * sign;
+}
+
+int main()
+{
+    int num;
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    printf("Reversed: %d", reverseInt(num));
+}

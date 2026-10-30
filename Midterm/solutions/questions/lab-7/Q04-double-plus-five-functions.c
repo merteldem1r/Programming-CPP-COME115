@@ -10,3 +10,38 @@
  *
  * Example: input 10 -> 25
  */
+
+#include <stdio.h>
+
+void calculate(void)
+{
+    int x, res;
+
+    printf("Enter a number: ");
+    scanf("%d", &x);
+
+    res = 2 * x + 5;
+
+    printf("Result from 1: %d\n", res);
+}
+
+int calculate2(void)
+{
+    int x, res;
+
+    printf("Enter a number: ");
+    scanf("%d", &x);
+
+    res = 2 * x + 5;
+
+    return res;
+}
+
+int main()
+{
+    calculate();
+    int res = calculate2();
+    printf("Result from 2: %d\n", res);
+
+    return 0;
+}

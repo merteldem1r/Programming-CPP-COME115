@@ -11,3 +11,32 @@
  *   D E F
  *   G H I J
  */
+
+#include <stdio.h>
+
+int main(void)
+{
+    int rowCount = 0;
+    printf("Enter the row count: ");
+    scanf("%d", &rowCount);
+
+    char c = 'A';
+    // uppercase
+    for (int i = 1; i <= rowCount; ++i)
+    {
+        for (int j = 0; j < i; ++j)
+        {
+            if (c <= 'Z')
+                printf("%c ", c++);
+        }
+        printf("\n");
+
+        if (c > 'Z')
+        {
+            printf("No more uppercase letters...");
+            break;
+        }
+    }
+
+    return 0;
+}

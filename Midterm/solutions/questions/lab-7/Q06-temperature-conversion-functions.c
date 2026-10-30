@@ -11,3 +11,25 @@
  *   C = (F - 32) * 5 / 9
  *   K = C + 273
  */
+
+#include <stdio.h>
+
+double celsiusToFahrenheit(double c)
+{
+    return (c / 100) * 180 + 32;
+}
+double fahrenheitToCelsius(double f)
+{
+    return (f - 32) / 180 * 100;
+}
+
+int main()
+{
+    int temp;
+
+    printf("Enter a temperature: ");
+    scanf("%d", &temp);
+
+    printf("celsius To Fahrenheit: %.2f\n", celsiusToFahrenheit(temp));
+    printf("fahrenheit To Celsius: %.2f", fahrenheitToCelsius(temp));
+}

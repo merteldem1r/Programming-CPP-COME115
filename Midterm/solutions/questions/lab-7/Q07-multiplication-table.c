@@ -12,3 +12,29 @@
  *   ...
  *   3 x 10 = 30
  */
+
+#include <stdio.h>
+
+void printMultiplication(int num)
+{
+    for (int i = 1; i <= 10; ++i)
+    {
+        printf("%d x %d = %d\n", num, i, num * i);
+    }
+}
+
+int main()
+{
+    int num;
+
+    printf("Enter a temperature: ");
+    scanf("%d", &num);
+
+    if (num < 1 || num > 10)
+    {
+        printf("Wrong number range, enter 1-10");
+        return 0;
+    }
+
+    printMultiplication(num);
+}

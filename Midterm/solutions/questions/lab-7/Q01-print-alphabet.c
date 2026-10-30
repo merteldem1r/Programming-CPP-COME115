@@ -11,3 +11,21 @@
  *   Lowercase letters
  *   a b c d e f g h i j k l m n o p q r s t u v w x y z
  */
+
+#include <stdio.h>
+
+int main(void)
+{
+    // uppercase
+    for (char c = 'A'; c <= 'Z'; ++c)
+    {
+        printf("%c ", c);
+    }
+    printf("\n");
+
+    // lowercase
+    for (char c = 'a'; c <= 'z'; ++c)
+    {
+        printf("%c ", c);
+    }
+}
