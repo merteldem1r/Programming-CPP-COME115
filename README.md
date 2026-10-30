@@ -27,7 +27,7 @@ It collects the lab materials, the flowchart and algorithm solutions, and the C 
 │   │   └── questions/                # C programs, one file per lab question
 │   │       ├── lab-5/                # Q01 … Q11 (+ Q07b bonus)
 │   │       ├── lab-6/                # Q01a/Q01b … Q07
-│   │       └── lab-7/                # (next)
+│   │       └── lab-7/                # Q01 … Q11
 │   └── summary/                      # (empty for now)
 └── Final/
     └── Final.md
@@ -43,7 +43,7 @@ cd Midterm/solutions/questions/lab-5
 gcc -Wall Q03-positive-check.c -o Q03 && ./Q03
 ```
 
-On macOS `gcc` is Apple Clang;
+On macOS `gcc` is Apple Clang.
 Compiled executables are ignored by `.gitignore`.
 
 ## Midterm
@@ -58,7 +58,7 @@ Compiled executables are ignored by `.gitignore`.
 | [lab-4.pdf](Midterm/materials/lab-4.pdf)                 | Week 4 – Flowcharts with loops, questions 1–9                                                 |
 | [lab-5.pdf](Midterm/materials/lab-5.pdf)                 | Week 5 – First C programs: data types, `printf`/`scanf`, `if`/`else`, `switch`, examples 1–11 |
 | [lab-6.pdf](Midterm/materials/lab-6.pdf)                 | Week 6 – Nested `if`, `switch-case`, `while` and `for` loops, questions 1–7                   |
-| [lab-7.pdf](Midterm/materials/lab-7.pdf)                 | Week 7 – `do-while`, nested loops, `break`/`continue`, functions                              |
+| [lab-7.pdf](Midterm/materials/lab-7.pdf)                 | Week 7 – `do-while`, nested loops, `break`/`continue`, functions, questions 1–11              |
 
 ### Solutions
 
@@ -70,11 +70,11 @@ Compiled executables are ignored by `.gitignore`.
 
 #### C Programs ([questions/](Midterm/solutions/questions))
 
-| Lab                                             | Questions                   | Topics covered                                                                                                                                                                       |
-| ----------------------------------------------- | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [Lab&nbsp;5](Midterm/solutions/questions/lab-5) | 11&nbsp;+&nbsp;1&nbsp;bonus | Data types and format specifiers, `printf`/`scanf`, `if` / `if-else` / `else if` chains, nested `if`, logical operators (`&&`, `\|\|`), modulus `%`, `switch-case`, input validation |
-| [Lab&nbsp;6](Midterm/solutions/questions/lab-6) | 7                           | Character checks with ASCII ranges, nested `if`, `switch-case` (and fall-through without `break`), `for` and `while` loops, nested loops for star patterns                           |
-| [Lab&nbsp;7](Midterm/solutions/questions/lab-7) | 11                          | `do-while` menus, nested loops, char loops, functions: `void` vs returning, parameters, digit tricks with `%` and `/`                                                                |
+| Lab                                             | Questions                   | Topics covered                                                                                                                                                                                                      |
+| ----------------------------------------------- | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Lab&nbsp;5](Midterm/solutions/questions/lab-5) | 11&nbsp;+&nbsp;1&nbsp;bonus | Data types and format specifiers, `printf`/`scanf`, `if` / `if-else` / `else if` chains, nested `if`, logical operators (`&&`, `\|\|`), modulus `%`, `switch-case`, input validation                                |
+| [Lab&nbsp;6](Midterm/solutions/questions/lab-6) | 7                           | Character checks with ASCII ranges, nested `if`, `switch-case` (and fall-through without `break`), `for` and `while` loops, nested loops for star patterns                                                          |
+| [Lab&nbsp;7](Midterm/solutions/questions/lab-7) | 11                          | `do-while` menus, char loops (alphabet, letter triangle), functions: `void` vs returning, with/without parameters, `#define` constants, digit tricks with `%` and `/`, prime check, `scanf` return-value validation |
 
 ## Final
 
