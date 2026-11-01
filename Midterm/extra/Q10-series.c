@@ -20,22 +20,59 @@
 
 double alternatingSeries(int n)
 {
-    // ...
+    int sign = -1;
+    double res = 1;
+
+    for (int i = 2; i <= n; ++i)
+    {
+        res += (double)sign * (1.0 / i);
+        sign *= -1;
+    }
+
+    return res;
 }
 
 double alternatingSeriesRec(int n)
 {
-    // ...
+    if (n == 0)
+    {
+        return 0;
+    }
+
+    // odd terms are +, even terms are -
+    double term = 1.0 / n;
+    if (n % 2 == 0)
+    {
+        term = -term;
+    }
+
+    return term + alternatingSeriesRec(n - 1);
 }
 
 double eSeries(int n)
 {
-    // ...
+    double res = 1;
+    double fact = 1;
+
+    for (int i = 1; i <= n; ++i)
+    {
+        fact *= i; // i! = (i-1)! * i, built from the previous step
+        res += 1.0 / fact;
+    }
+
+    return res;
 }
 
 double squareSeries(int n)
 {
-    // ...
+    double res = 0;
+
+    for (int i = 1; i <= n; ++i)
+    {
+        res += (double)i / (i * i + 1);
+    }
+
+    return res;
 }
 
 int main(void)

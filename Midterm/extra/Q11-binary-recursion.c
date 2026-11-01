@@ -18,27 +18,40 @@
  */
 
 #include <stdio.h>
+#include <math.h>
 
 void printBinary(int n)
 {
-    // ...
+    if (n > 1)
+        printBinary(n / 2);
+    printf("%d", n % 2);
 }
 
 int countOnes(int n)
 {
-    // ...
+    if (n == 0)
+        return 0;
+    return n % 2 + countOnes(n / 2);
 }
 
 int binaryToDecimal(int b)
 {
-    // ...
+    if (b == 0)
+        return 0;
+    return b % 10 + 2 * binaryToDecimal(b / 10);
 }
 
 int main(void)
 {
-    printf("13 -> "); printBinary(13); printf("\n");
-    printf("0  -> "); printBinary(0); printf("\n");
-    printf("64 -> "); printBinary(64); printf("\n");
+    printf("13 -> ");
+    printBinary(13);
+    printf("\n");
+    printf("0  -> ");
+    printBinary(0);
+    printf("\n");
+    printf("64 -> ");
+    printBinary(64);
+    printf("\n");
     printf("countOnes(13)  = %d\n", countOnes(13));
     printf("countOnes(255) = %d\n", countOnes(255));
     printf("binaryToDecimal(1101)   = %d\n", binaryToDecimal(1101));

@@ -21,22 +21,38 @@
 
 int digitSum(int n)
 {
-    // ...
+    if (n == 0)
+    {
+        return 0;
+    }
+
+    return n % 10 + digitSum(n / 10);
 }
 
 int countDigit(int n, int d)
 {
-    // ...
+    if (n == 0)
+        return 0;
+
+    int isAppears = n % 10 == d;
+    return isAppears + countDigit(n / 10, d);
 }
 
 int reverseNum(int n)
 {
-    // ...
+    int rev = 0;
+    while (n > 0)
+    {
+        rev = rev * 10 + n % 10;
+        n /= 10;
+    }
+
+    return rev;
 }
 
 int isPalindrome(int n)
 {
-    // ...
+    return reverseNum(n) == n;
 }
 
 int main(void)
